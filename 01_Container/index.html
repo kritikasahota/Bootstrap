@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Container</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ====================================================
+                        BOOTSTRAP CONTAINER
+    =====================================================
+
+    Definition:
+    A Bootstrap container is a responsive wrapper that
+    holds all the content of the webpage.
+
+    Why use a Container?
+    ✔ Keeps content centered.
+    ✔ Adds left & right padding automatically.
+    ✔ Makes layouts responsive.
+    ✔ Used as the main wrapper for Bootstrap pages.
+
+    Syntax:
+
+    <div class="container">
+        Content
+    </div>
+
+    Types of Containers:
+    1. .container
+    2. .container-fluid
+    3. .container-sm
+    4. .container-md
+    5. .container-lg
+    6. .container-xl
+    7. .container-xxl
+
+    ===================================================== -->
+
+
+    <!-- ============================================
+                1. Fixed Responsive Container
+    ============================================= -->
+
+    <div class="container bg-warning p-4 mt-4 rounded shadow">
+
+        <!--
+        .container
+        ----------
+        ✔ Fixed responsive width.
+        ✔ Automatically centered.
+        ✔ Width changes according to screen size.
+        ✔ Most commonly used in Bootstrap.
+        -->
+
+        <h1>01. Bootstrap Container</h1>
+
+        <p>
+            This content is inside a Bootstrap container.
+
+            Notice that there is empty space on the left
+            and right sides. Bootstrap automatically
+            provides this spacing and keeps the content
+            centered on the page.
+
+            As the screen size changes, the container
+            width also changes automatically.
+        </p>
+
+    </div>
+
+
+
+    <!-- ============================================
+                2. Fluid Container
+    ============================================= -->
+
+    <div class="container-fluid bg-info text-white p-4 mt-5">
+
+        <!--
+        .container-fluid
+        ----------------
+        ✔ Always occupies 100% width.
+        ✔ No empty space on left or right.
+        ✔ Used for full-width sections.
+        -->
+
+        <h2>02. Bootstrap Container Fluid</h2>
+
+        <p>
+            This container occupies the entire width of
+            the browser window.
+        </p>
+
+    </div>
+
+
+
+    <!-- ============================================
+            3. Responsive Container Example
+    ============================================= -->
+
+    <div class="container-lg bg-success text-white p-4 mt-5 rounded">
+
+        <!--
+        .container-lg
+        --------------
+        Full width on:
+        ✔ Extra Small
+        ✔ Small
+        ✔ Medium
+
+        Fixed width on:
+        ✔ Large
+        ✔ Extra Large
+        ✔ XXL
+        -->
+
+        <h2>03. Responsive Container</h2>
+
+        <p>
+            Resize the browser window to observe how
+            this container changes its width.
+        </p>
+
+    </div>
+
+
+
+    <!-- ============================================
+                Bootstrap Utility Classes Used
+    ============================================= -->
+
+    <!--
+
+    bg-warning  -> Yellow background
+
+    bg-info     -> Sky blue background
+
+    bg-success  -> Green background
+
+    text-white  -> White text color
+
+    p-4         -> Padding on all sides
+
+    mt-4        -> Margin-top
+
+    rounded     -> Rounded corners
+
+    shadow      -> Box shadow
+
+    -->
+</body>
+</html>
