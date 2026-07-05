@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the webpage responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bootstrap Badges Notes</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ==========================================================
+                    BOOTSTRAP BADGES
+==============================================================
+
+Definition:
+A Bootstrap Badge is a small label or counter used to
+display additional information such as notifications,
+status, unread messages, product labels, or counts.
+
+Syntax:
+
+<span class="badge text-bg-primary">
+    New
+</span>
+
+Explanation:
+
+badge
+------
+Base badge class.
+(Mandatory)
+
+text-bg-primary
+---------------
+Applies both text color and background color.
+
+============================================================== -->
+
+
+<div class="container mt-4">
+
+    <h1 class="text-center mb-5">
+        Bootstrap Badge Examples
+    </h1>
+
+
+<!-- ==========================================================
+                    1. Basic Badge
+============================================================== -->
+
+    <h2>1. Basic Badge</h2>
+
+    <h4>
+        Example Heading
+        <span class="badge text-bg-primary">
+            New
+        </span>
+    </h4>
+
+    <hr>
+
+
+
+<!-- ==========================================================
+                    2. Badge Colors
+============================================================== -->
+
+    <h2>2. Badge Colors</h2>
+
+    <span class="badge text-bg-primary">Primary</span>
+
+    <span class="badge text-bg-secondary">Secondary</span>
+
+    <span class="badge text-bg-success">Success</span>
+
+    <span class="badge text-bg-danger">Danger</span>
+
+    <span class="badge text-bg-warning">Warning</span>
+
+    <span class="badge text-dark bg-warning">Warning (Readable)</span>
+
+    <span class="badge text-bg-info">Info</span>
+
+    <span class="badge text-bg-light">Light</span>
+
+    <span class="badge text-bg-dark">Dark</span>
+
+    <hr>
+
+
+
+<!-- ==========================================================
+                    3. Pill Badges
+============================================================== -->
+
+<!--
+rounded-pill
+
+Makes badges oval instead of rectangular.
+-->
+
+    <h2>3. Pill Badges</h2>
+
+    <span class="badge rounded-pill text-bg-primary">
+        Primary
+    </span>
+
+    <span class="badge rounded-pill text-bg-success">
+        Success
+    </span>
+
+    <span class="badge rounded-pill text-bg-danger">
+        Danger
+    </span>
+
+    <span class="badge rounded-pill text-bg-warning">
+        Warning
+    </span>
+
+    <span class="badge rounded-pill text-bg-info">
+        Info
+    </span>
+
+    <hr>
+
+
+
+<!-- ==========================================================
+                4. Badges Inside Buttons
+============================================================== -->
+
+<!--
+Very common in:
+✔ Notifications
+✔ Shopping Cart
+✔ Messages
+-->
+
+    <h2>4. Badge Inside Button</h2>
+
+    <button class="btn btn-primary">
+        Notifications
+        <span class="badge text-bg-secondary">
+            4
+        </span>
+    </button>
+
+    <button class="btn btn-success ms-2">
+        Orders
+        <span class="badge text-bg-light">
+            12
+        </span>
+    </button>
+
+    <button class="btn btn-danger ms-2">
+        Cart
+        <span class="badge text-bg-warning">
+            8
+        </span>
+    </button>
+
+    <hr>
+
+
+
+<!-- ==========================================================
+                5. Positioned Badge
+============================================================== -->
+
+<!--
+
+position-relative
+-----------------
+Makes button the reference point.
+
+position-absolute
+-----------------
+Positions badge freely.
+
+top-0
+------
+Moves badge to top.
+
+start-100
+----------
+Moves badge to right.
+
+translate-middle
+----------------
+Centers badge on corner.
+
+rounded-pill
+------------
+Makes badge oval.
+
+-->
+
+    <h2>5. Positioned Notification Badge</h2>
+
+    <button class="btn btn-primary position-relative">
+
+        Inbox
+
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+
+            99+
+
+            <span class="visually-hidden">
+                unread messages
+            </span>
+
+        </span>
+
+    </button>
+
+    <hr>
+
+
+
+<!-- ==========================================================
+                6. Status Badges
+============================================================== -->
+
+    <h2>6. Status Badges</h2>
+
+    <h5>
+
+        Order Status
+
+        <span class="badge text-bg-success">
+            Delivered
+        </span>
+
+    </h5>
+
+    <h5>
+
+        Payment
+
+        <span class="badge text-bg-danger">
+            Failed
+        </span>
+
+    </h5>
+
+    <h5>
+
+        Product
+
+        <span class="badge text-bg-warning">
+            Out of Stock
+        </span>
+
+    </h5>
+
+    <hr>
+
+
+
+<!-- ==========================================================
+                7. E-commerce Example
+============================================================== -->
+
+    <h2>7. Product Labels</h2>
+
+    <h4>
+
+        iPhone 16
+
+        <span class="badge text-bg-danger">
+            Sale
+        </span>
+
+    </h4>
+
+    <h4>
+
+        MacBook Air
+
+        <span class="badge text-bg-success">
+            New
+        </span>
+
+    </h4>
+
+    <h4>
+
+        Sneakers
+
+        <span class="badge text-bg-warning">
+            Limited Stock
+        </span>
+
+    </h4>
+
+    <hr>
+
+
+
+<!-- ==========================================================
+                8. Badge Inside Card Example
+============================================================== -->
+
+    <h2>8. Badge in a Card</h2>
+
+    <div class="card" style="width: 18rem;">
+
+        <div class="card-body">
+
+            <h5 class="card-title">
+                Premium Course
+
+                <span class="badge text-bg-success">
+                    Bestseller
+                </span>
+
+            </h5>
+
+            <p class="card-text">
+                Learn Bootstrap from beginner to advanced.
+            </p>
+
+            <button class="btn btn-primary">
+                Enroll Now
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================================
+                IMPORTANT CLASSES
+==============================================================
+
+badge
+
+rounded-pill
+
+text-bg-primary
+
+text-bg-secondary
+
+text-bg-success
+
+text-bg-danger
+
+text-bg-warning
+
+text-bg-info
+
+text-bg-light
+
+text-bg-dark
+
+position-relative
+
+position-absolute
+
+top-0
+
+start-100
+
+translate-middle
+
+visually-hidden
+
+============================================================== -->
+
+</body>
+</html>
