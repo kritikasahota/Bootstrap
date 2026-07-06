@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Forms Basics</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light">
+    <div class="container mt-5">
+<!--====================================================
+                BOOTSTRAP FORMS NOTES
+======================================================-->
+
+<!--
+Definition:
+A Form is used to collect user input such as name, email, password, phone number, etc. Bootstrap provides built-in classes to make forms responsive, attractive and easy to use.
+
+Most Common Classes
+form-label
+form-control
+form-text
+form-select
+btn
+-->
+
+  <h1 class="text-center mb-5">Bootstrap Forms (Basics)</h1>
+
+<!--====================================================
+                BASIC FORM
+======================================================-->
+      
+<form>
+    <!--================================================
+                    TEXT INPUT
+    =================================================-->
+
+        <div class="mb-3">
+          <label class="form-label"> Full Name </label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter your full name"
+          />
+        </div>
+
+    <!--================================================
+                    EMAIL
+    =================================================-->
+
+        <div class="mb-3">
+          <label class="form-label"> Email </label>
+          <input
+            type="email"
+            class="form-control"
+            placeholder="example@gmail.com"
+          />
+        </div>
+
+    <!--================================================
+                    PASSWORD
+    =================================================-->
+
+        <div class="mb-3">
+          <label class="form-label"> Password </label>
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Enter password"
+          />
+        </div>
+
+    <!--================================================
+                    NUMBER
+    =================================================-->
+
+        <div class="mb-3">
+          <label class="form-label"> Phone Number </label>
+          <input type="number" class="form-control" placeholder="9876543210" />
+        </div>
+
+    <!--================================================
+                    DATE
+    =================================================-->
+
+        <div class="mb-3">
+          <label class="form-label"> Date of Birth </label>
+          <input type="date" class="form-control" />
+        </div>
+
+    <!--================================================
+                    READONLY
+    =================================================-->
+
+    <!--
+    readonly - User can see the value but cannot edit it.
+    -->
+
+        <div class="mb-3">
+          <label class="form-label"> Country </label>
+          <input type="text" class="form-control" value="India" readonly />
+        </div>
+
+    <!--================================================
+                    DISABLED
+    =================================================-->
+
+        <div class="mb-3">
+          <label class="form-label"> Disabled Input </label>
+          <input
+            type="text"
+            class="form-control"
+            value="Disabled Field"
+            disabled
+          />
+        </div>
+
+    <!--================================================
+                    REQUIRED
+    =================================================-->
+
+        <div class="mb-3">
+          <label class="form-label"> Username </label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter username"
+            required
+          />
+        </div>
+
+    <!--================================================
+                    HELP TEXT
+    =================================================-->
+
+    <!--
+    form-text
+    Displays small helper text below an input.
+    -->
+
+        <div class="mb-3">
+          <label class="form-label"> Password </label>
+          <input type="password" class="form-control" />
+          <div class="form-text">
+            Password should contain at least 8 characters.
+          </div>
+        </div>
+
+<!--================================================
+                TEXTAREA
+=================================================-->
+
+<div class="mb-3">
+  <label class="form-label">Address</label>
+  <textarea
+    class="form-control"
+    rows="3"
+    placeholder="Enter your address"
+  ></textarea>
+</div>
+
+<!--================================================
+                DROPDOWN
+=================================================-->
+
+<div class="mb-3">
+  <label class="form-label">Select Your Course</label>
+  <select class="form-select">
+    <option selected>Select Course</option>
+    <option>Web Development</option>
+    <option>Java</option>
+    <option>Python</option>
+    <option>Data Science</option>
+  </select>
+</div>
+
+<!--================================================
+                CHECKBOX
+=================================================-->
+
+<div class="mb-3">
+  <label class="form-label d-block">
+    Skills
+  </label>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="checkbox"
+      id="html">
+    <label
+      class="form-check-label"
+      for="html">
+      HTML
+    </label>
+  </div>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="checkbox"
+      id="css">
+    <label
+      class="form-check-label"
+      for="css">
+      CSS
+    </label>
+  </div>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="checkbox"
+      id="bootstrap">
+    <label
+      class="form-check-label"
+      for="bootstrap">
+      Bootstrap
+    </label>
+  </div>
+</div>
+<!--================================================
+                RADIO BUTTON
+=================================================-->
+
+<!--Radio buttons allow only ONE option to be selected. All radio buttons must have the same name attribute.-->
+
+<div class="mb-3">
+  <label class="form-label d-block">
+    Gender
+  </label>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="radio"
+      name="gender"
+      id="male">
+    <label
+      class="form-check-label"
+      for="male">
+      Male
+    </label>
+  </div>
+  <div class="form-check">
+    <input
+      class="form-check-input"
+      type="radio"
+      name="gender"
+      id="female">
+    <label
+      class="form-check-label"
+      for="female">
+      Female
+    </label>
+  </div>
+</div>
+
+<!--================================================
+                SWITCH
+=================================================-->
+<!--
+form-switch
+Creates a toggle switch.
+-->
+
+<div class="form-check form-switch mb-3">
+  <input
+    class="form-check-input"
+    type="checkbox"
+    id="notifications">
+  <label
+    class="form-check-label"
+    for="notifications">
+    Enable Notifications
+  </label>
+</div>
+
+<!--================================================
+                FILE INPUT
+=================================================-->
+<!--
+type="file"
+Allows user to upload files.
+form-control
+Styles file input.
+-->
+
+<div class="mb-3">
+  <label class="form-label">
+    Upload Resume
+  </label>
+  <input
+    type="file"
+    class="form-control">
+</div>
+    <!--================================================
+                    SUBMIT BUTTON
+    =================================================-->
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+        </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
